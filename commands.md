@@ -19,4 +19,6 @@ npm i -D react react-dom @types/react @types/react-dom
 npm i -D tailwindcss
 npx tailwindcss init
 npm i -D prettier-plugin-tailwindcss
+
+npm i clsx tailwind-merge
 ```
