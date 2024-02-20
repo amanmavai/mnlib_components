@@ -1,0 +1,3 @@
+- not to use any color classes in the component library as they can be supplied through consuming applications
+- not to use any reset css classes in the component library. This is to avoid any conflicts with consuming applications
+- use tailwind prefix(tw-) classes to avoid conflicts with consuming applications
