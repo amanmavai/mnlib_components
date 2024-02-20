@@ -1,0 +1,41 @@
+{
+  "name": "mnlib_components",
+  "version": "0.27.0",
+  "description": "reusable react components to be used accross all projects",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./styles.css": {
+      "import": "./dist/styles.css",
+      "default": "./dist/styles.css"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "npm run build:js && npm run generate:css",
+    "build:js": "tsc",
+    "generate:css": "npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/styles.css",
+    "clean": "rm -rf dist",
+    "publish:pkg": "npm run clean && npm run build && npm publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.57",
+    "@types/react-dom": "^18.2.19",
+    "prettier": "^3.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
+  }
+}
