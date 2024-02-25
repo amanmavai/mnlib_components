@@ -1,8 +1,9 @@
 {
   "name": "mnlib_components",
-  "version": "0.27.0",
+  "version": "0.28.0",
   "description": "reusable react components to be used accross all projects",
   "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist/**"
