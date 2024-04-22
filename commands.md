@@ -8,5 +8,7 @@ npm install -D prettier
 mkdir lib
 touch lib/main.ts
 
+npm i @types/node -D
+
 
 ```
