@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "node:path";
 import {fileURLToPath} from "node:url";
 import {glob} from "glob";
+import {peerDependencies} from "./package.json";
 
 import dts from "vite-plugin-dts";
 import {libInjectCss} from "vite-plugin-lib-inject-css";
@@ -17,7 +18,7 @@ export default defineConfig({
       formats: ["es"],
     },
     rollupOptions: {
-      external: ["react", "react/jsx-runtime"],
+      external: [...Object.keys(peerDependencies), "react/jsx-runtime"],
       input: Object.fromEntries(
         glob.sync("lib/**/*.{ts,tsx}").map((file) => [
           // The name of the entry point
