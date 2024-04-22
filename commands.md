@@ -10,5 +10,8 @@ touch lib/main.ts
 
 npm i @types/node -D
 
+# separate tsconfig file for lib
+touch tsconfig-build.json
+
 
 ```

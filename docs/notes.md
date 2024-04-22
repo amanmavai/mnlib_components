@@ -1,2 +1,3 @@
 - Think of all code inside the src folder as your demo page.
 - The main entry point of your library will be a file named main.ts inside of lib. When installing the library you can import everything that is exported from this file.
+- To ensure only the lib directory is included during the build process you can create a separate TypeScript configuration file specifically for building
