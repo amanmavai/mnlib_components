@@ -11,7 +11,7 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": true, // Prevents the TypeScript compiler from emitting output, deferring this to Vite.
     "jsx": "react-jsx",
 
     /* Linting */
