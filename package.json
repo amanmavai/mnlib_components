@@ -1,13 +1,25 @@
 {
   "name": "mnlib_components",
-  "private": true,
-  "version": "0.0.0",
+  "description": "reusable react components to be used accross all projects",
+  "author": "Aman Mavai",
+  "private": false,
+  "version": "0.29.0",
   "type": "module",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc --p ./tsconfig-build.json && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
   },
   "dependencies": {},
   "peerDependencies": {
