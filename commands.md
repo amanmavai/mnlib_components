@@ -17,4 +17,7 @@ touch tsconfig-build.json
 npm i -D vite-plugin-dts vite-plugin-lib-inject-css
 
 npm i -D glob
+
+npm i clsx
+
 ```

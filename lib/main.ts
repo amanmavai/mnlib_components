@@ -1,3 +1,2 @@
-export function helloAnything(thing: string): string {
-  return `Hello ${thing}!`;
-}
+export {HelloAtom} from "./components/HelloAtom";
+export {Debug} from "./components/Debug";
