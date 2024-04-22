@@ -1,0 +1,2 @@
+- Think of all code inside the src folder as your demo page.
+- The main entry point of your library will be a file named main.ts inside of lib. When installing the library you can import everything that is exported from this file.
