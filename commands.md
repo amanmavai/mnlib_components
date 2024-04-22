@@ -13,5 +13,8 @@ npm i @types/node -D
 # separate tsconfig file for lib
 touch tsconfig-build.json
 
+# add vite plugins
+npm i -D vite-plugin-dts vite-plugin-lib-inject-css
 
+npm i -D glob
 ```

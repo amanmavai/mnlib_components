@@ -1,3 +1,4 @@
 - Think of all code inside the src folder as your demo page.
 - The main entry point of your library will be a file named main.ts inside of lib. When installing the library you can import everything that is exported from this file.
 - To ensure only the lib directory is included during the build process you can create a separate TypeScript configuration file specifically for building
+- By default dts will generate types for both src and lib because both folders are included in the project's .tsconfig. This is why we need to pass one configuration parameter: include: ['lib'].
