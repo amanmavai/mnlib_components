@@ -29,7 +29,7 @@ export function MenuSheet({navItems, LinkComponent}: {navItems: NavItem[]; LinkC
       </SheetTrigger>
 
       <SheetContent side="left" className="tw-w-80 tw-rounded-r-md tw-px-0">
-        <SheetHeader className="h-8">
+        <SheetHeader className="tw-h-8">
           <SheetTitle></SheetTitle>
           <SheetDescription></SheetDescription>
         </SheetHeader>
