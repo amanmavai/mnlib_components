@@ -12,7 +12,7 @@ interface HeaderProps {
 export function Header({navItems, LinkComponent, title}: HeaderProps) {
   return (
     <header className="tw-flex tw-items-center tw-border-b tw-border-b-gray-200 tw-px-4">
-      <MenuSheet navItems={navItems} LinkComponent={LinkComponent} />;
+      <MenuSheet navItems={navItems} LinkComponent={LinkComponent} />
       <div className="tw-flex tw-flex-1 tw-items-center tw-justify-end tw-text-lg tw-text-primary">{title}</div>
     </header>
   );
