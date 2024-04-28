@@ -5,10 +5,14 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
-      <div className="card">
-        <HelloAtom name="Aman" size="rough" spin={90} className="new_class" />
+      <div className="">
+        <div className="card">
+          <HelloAtom name="Aman" size="rough" spin={90} className="new_class" />
+        </div>
+        <div className="card">
+          <Debug o={{one: "1", two: {inner: "2-inner"}}} className="debug_wrapper" />
+        </div>
       </div>
-      <Debug o={{one: "1", two: {inner: "2-inner"}}} className="debug_wrapper" />
     </>
   );
 }
