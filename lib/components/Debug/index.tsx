@@ -1,17 +1,13 @@
-import {clsx} from "clsx";
-import styles from "./styles.module.css";
-
 interface Props {
   o: any;
   title?: string;
-  className?: string;
 }
 
 // Its good that we have all the styles here in style tag, this
 // makes it very-very portable, doesn't depend on any styling solution
 // doesn't mean everything needs to be like this, but some components
 // can have this luxury
-export function Debug({o, title = "STATE", className}: Props) {
+export function Debug({o, title = "STATE"}: Props) {
   return (
     <div
       style={{
@@ -21,7 +17,6 @@ export function Debug({o, title = "STATE", className}: Props) {
         boxShadow: "0 0 1px #eee inset",
         color: "blue",
       }}
-      className={clsx(styles.wrapper, className)}
     >
       <div
         style={{

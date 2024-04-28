@@ -1,4 +1,4 @@
-import {clsx} from "clsx";
+import {cn} from "../../utils";
 import styles from "./styles.module.css";
 
 export interface HelloAtomProps {
@@ -10,9 +10,9 @@ export interface HelloAtomProps {
 
 export function HelloAtom(props: HelloAtomProps) {
   return (
-    <div className={clsx(styles.wrapper, props.className)}>
+    <div className={cn(styles.wrapper, props.className)}>
       <h1>Hello Atom</h1>
-      <div>{props.name}</div>
+      <div className="tw-text-3xl tw-text-cyan-500">{props.name}</div>
       <div>{props.size}</div>
       <div>{props.spin}</div>
     </div>

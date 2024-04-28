@@ -20,4 +20,9 @@ npm i -D glob
 
 npm i clsx
 
+# tailwindcss
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm i -D prettier-plugin-tailwindcss
+npm i -D tailwind-merge
 ```

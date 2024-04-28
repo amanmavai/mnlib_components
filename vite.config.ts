@@ -4,12 +4,17 @@ import path from "node:path";
 import {fileURLToPath} from "node:url";
 import {glob} from "glob";
 import {peerDependencies} from "./package.json";
-
 import dts from "vite-plugin-dts";
+import tailwindcss from "tailwindcss";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), dts({include: ["lib"]})],
+  css: {
+    postcss: {
+      plugins: [tailwindcss],
+    },
+  },
   build: {
     minify: false,
     lib: {
