@@ -61,7 +61,7 @@ function NavItem({LinkComponent, to, text, onClick}: NavItemProps) {
     <LinkComponent
       onClick={onClick}
       to={to}
-      className={({isActive}) =>
+      className={({isActive}: {isActive: boolean}) =>
         cn(
           isActive ? "tw-font-semibold tw-text-gray-800" : "tw-font-normal tw-text-gray-600",
           "tw-rounded-lg tw-p-1 tw-px-3 tw-transition-all hover:tw-bg-gray-200",
