@@ -25,4 +25,10 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 npm i -D prettier-plugin-tailwindcss
 npm i -D tailwind-merge
+
+# shadcn/ui
+npx shadcn-ui@latest init
+
+npx shadcn-ui@latest add button
+
 ```

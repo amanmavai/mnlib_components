@@ -10,6 +10,11 @@ import tailwindcss from "tailwindcss";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), dts({include: ["lib"]})],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./lib"),
+    },
+  },
   css: {
     postcss: {
       plugins: [tailwindcss],
