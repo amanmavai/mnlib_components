@@ -1,5 +1,5 @@
 import * as React from "react";
-import {CaretSortIcon, CheckIcon} from "@radix-ui/react-icons";
+import {Check, ChevronsUpDown} from "lucide-react";
 
 import {cn} from "@/utils";
 import {Button} from "@/components/ui/button";
@@ -22,8 +22,8 @@ export function Combobox({items}: ComboboxProps) {
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <Button variant="outline" role="combobox" aria-expanded={open} className="tw-w-[200px] tw-justify-between">
-          {value ? items.find((item) => item.value === value)?.label : "Select item..."}
-          <CaretSortIcon className="tw-ml-2 tw-h-4 tw-w-4 tw-shrink-0 tw-opacity-50" />
+          {value ? items.find((item) => item.value === value)?.label : "Select framework..."}
+          <ChevronsUpDown className="tw-ml-2 tw-h-4 tw-w-4 tw-shrink-0 tw-opacity-50" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="tw-w-[200px] tw-p-0">
@@ -41,7 +41,7 @@ export function Combobox({items}: ComboboxProps) {
                 }}
               >
                 {item.label}
-                <CheckIcon
+                <Check
                   className={cn("tw-ml-auto tw-h-4 tw-w-4", value === item.value ? "tw-opacity-100" : "tw-opacity-0")}
                 />
               </CommandItem>
