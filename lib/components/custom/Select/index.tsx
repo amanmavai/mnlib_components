@@ -11,7 +11,7 @@ import {
 export function Select() {
   return (
     <SelectPrimitive>
-      <SelectTrigger className="w-[250px]">
+      <SelectTrigger>
         <SelectValue placeholder="Select a fruit" />
       </SelectTrigger>
       <SelectContent>
