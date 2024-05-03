@@ -21,12 +21,12 @@ export function Combobox({items}: ComboboxProps) {
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <Button variant="outline" role="combobox" aria-expanded={open} className="tw-w-[200px] tw-justify-between">
+        <Button variant="outline" role="combobox" aria-expanded={open} className="tw-w-[250px] tw-justify-between">
           {value ? items.find((item) => item.value === value)?.label : "Select framework..."}
           <ChevronsUpDown className="tw-ml-2 tw-h-4 tw-w-4 tw-shrink-0 tw-opacity-50" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="tw-w-[200px] tw-p-0">
+      <PopoverContent className="tw-w-[250px] tw-p-0">
         <Command>
           <CommandInput placeholder="Search item..." className="tw-h-9" />
           <CommandEmpty>No Item found.</CommandEmpty>
