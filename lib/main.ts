@@ -10,6 +10,3 @@ export {Select} from "./components/custom/Select";
 
 // shadcn components
 export {Button} from "./components/ui/button";
-
-// utils fns
-export {cn} from "./utils";
