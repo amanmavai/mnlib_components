@@ -40,4 +40,5 @@ npx shadcn-ui@latest add label
 npx shadcn-ui@latest add input
 npx shadcn-ui@latest add sheet
 
+# exported cn function from helper.ts file, as same fn from utils.ts is using tw- prefix
 ```

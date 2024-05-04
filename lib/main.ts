@@ -10,3 +10,6 @@ export {Select} from "./components/custom/Select";
 
 // shadcn components
 export {Button} from "./components/ui/button";
+
+// utility functions
+export {cn} from "./shared/helper";
